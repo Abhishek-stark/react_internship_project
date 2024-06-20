@@ -1,0 +1,150 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    /* background-color: #242424; */
+    background-color: #04192d;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.form {
+    /* background-color: yellow; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    padding: 100px;
+}
+
+form {
+    background-color: #cf6161;
+    height: 600px;
+    width: 470px;
+    /* align-content: center; */
+    padding-left: 4%;
+    border-radius: 9px;
+    /* padding: 10px; */
+}
+
+.heading {
+    color: black;
+    font-size: 25px;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+
+.form-control {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 15px auto 15px 5px;
+    padding-left: 15px;
+    background-color: rgb(229, 241, 241);
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: black;
+}
+
+#checkboxid {
+    /* background-color: green; */
+    border: white;
+    /* appearance: none; */
+    height: 30px;
+    width: 30px;
+    background-color: #d5d5d5 !important;
+    border-radius: 5px;
+    cursor: pointer;
+    accent-color: green;
+}
+
+label {
+    color: black;
+    font-size: 19px;
+}
+
+.labelgroup {
+    display: flex;
+}
+
+.btn {
+    height: 40px;
+    width: 140px;
+    background-color: rgb(4, 9, 8);
+    color: rgb(252, 252, 252);
+    font-size: large;
+    margin-left: 110px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    scale: 1.05;
+}
+
+
+/* CSS for Popup Component  */
+
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+}
+
+.modal,
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: rgba(49, 49, 49, 0.8);
+}
+
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #020000;
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+}
